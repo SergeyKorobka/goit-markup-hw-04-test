@@ -28,7 +28,8 @@
     --color-header-logo:#4d5ae5;
     --color-footer:#2E2F42;
     --color-team-group:#434455;
-    --color-taem-item:#FFFFFF
+    --color-taem-item:#FFFFFF;
+    --footer-soc-text:#FFFFFF;
 }
 
 body {
@@ -39,6 +40,7 @@ body {
 
 .header-first{
 border-bottom: 1px solid #e7e9fc;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 p,
@@ -263,6 +265,7 @@ border-top: none;
     background: var(--color-footer);
     padding-top: 100px;
     padding-bottom: 100px;
+    display: flex;
 }
 
 .footer-text{
@@ -484,7 +487,7 @@ text-align: center;
 .team-soc-list {
 display: flex;
 justify-content: center;
-gap: 24px;;
+gap: 24px;
 
 }
 
@@ -504,11 +507,64 @@ justify-content: center;
 margin-top: 8px;
 }
 
-.team-soc-icon{
+.team-soc-link:hover, .team-soc-link:focus{
+background-color: #404BBF;;
+}
 
+.team-soc-icon{
 
 }
 
+.customer{
+padding-top: 120px;
+padding-bottom: 120px;
+}
+
+.customer-head{
+    font-size: 36px;
+    line-height: 1.11;
+    color: #2E2F42;
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+.customer-list {
+display: flex;
+gap: 24px;
+}
+
+.customer-item {
+width: 168px;
+height: 88px;
+}
+.customer-link {
+width: 100%;
+height: 100%;
+border: 1px solid #8E8F99;
+border-radius: 4px;
+display: flex ;
+align-items: center;
+justify-content: center;
+}
+
+.customer-link:hover , .customer-link:focus{
+border-color: #404BBF;
+}
+
+.customer-link:hover .customer-icon , .customer-link:focus .customer-icon{
+  fill: #404BBF;
+    }
+
+.customer-icon {
+width: 104px;
+height: 56px;
+fill:#8e8f99;
+}
+
+.footer-container{
+display: flex;
+align-items: baseline;
+}
 
 .footer-logo{
 font-family: "Raleway",sans-serif;
@@ -524,3 +580,40 @@ display: inline-block;
 align-items: center;
 margin-bottom: 16px;
 }
+
+.footer-soc-block{
+margin-left: 120px;
+}
+
+.foter-soc-text {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: var(--footer-soc-text);
+}
+.ftr-soc-list {
+display: flex;
+justify-content: center;
+gap: 16px;
+}
+
+.ftr-soc-item {
+width: 40px;
+height: 40px;
+}
+.ftr-soc-link {
+width: 100%;
+height: 100%;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #4D5AE5;
+margin-top: 16px;
+}
+
+.ftr-soc-link:hover , .ftr-soc-link:focus{
+background: #31D0AA;
+}
+
